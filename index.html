@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filipe Oliveira - Portfólio</title>
+  <style>
+    :root {
+      --primary: #1e40af;
+      --text: #1f2937;
+      --bg: #f9fafb;
+      --muted: #6b7280;
+      --light: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      border-bottom: 1px solid var(--light);
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 5px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text);
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid var(--light);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: var(--primary);
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 8px 0 16px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: white;
+      background-color: var(--primary);
+      padding: 10px 18px;
+      border-radius: 8px;
+      width: fit-content;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .card a:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      background-color: white;
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--light);
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .card a {
+        padding: 8px 14px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Filipe Oliveira</h1>
+    <p>Portfólio Pessoal de Projetos em Desenvolvimento Web</p>
+  </header>
+
+  <section class="section about">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou <strong>Filipe Oliveira</strong>, estudante de tecnologia e desenvolvedor front-end.  
+      Crio sites modernos como forma de estudo e demonstração prática.  
+      Abaixo estão alguns projetos realizados com HTML, CSS e JavaScript puro — todos publicados no meu GitHub.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Projetos</h2>
+    <div class="projects">
+
+      <div class="card">
+        <h3>Cópia do YouTube</h3>
+        <p>Reprodução visual do YouTube com miniaturas, responsividade e layout em grid. Feito para estudo de estrutura visual e CSS moderno.</p>
+        <a href="https://github.com/oDevOliveira/PortifolioHTML/blob/main/YouTube.html" target="_blank">Ver Projeto</a>
+      </div>
+
+      <div class="card">
+        <h3>TechSolutions</h3>
+        <p>Site institucional fictício para uma empresa de tecnologia. Foco em serviços de hardware e software, com destaque para identidade profissional.</p>
+        <a href="https://github.com/oDevOliveira/PortifolioHTML/blob/main/TechSolutions.html" target="_blank">Ver Projeto</a>
+      </div>
+
+      <div class="card">
+        <h3>TechConnect</h3>
+        <p>Versão alternativa da empresa fictícia, com visual mais moderno, escuro e tecnológico. Ideal para praticar estilos avançados com gradientes e grid.</p>
+        <a href="https://github.com/oDevOliveira/PortifolioHTML/blob/main/TechConnect.html" target="_blank">Ver Projeto</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Filipe Oliveira — Portfólio pessoal criado com HTML e CSS.</p>
+  </footer>
+
+</body>
+</html>
